@@ -11,6 +11,7 @@ using namespace std ;
 using ariel ::Direction;
 
 
+
 /////
 const char minValidChar = 32 ;
 const char maxValidChar = 126; 
