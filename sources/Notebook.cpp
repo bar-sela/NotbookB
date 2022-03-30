@@ -197,8 +197,10 @@ void ariel::Notebook::show(int page) {
          array<char,HUNDRED> row ={};
         for(unordered_map<int, array<char,HUNDRED>>::iterator itr = pages[page].begin(); itr != pages[page].end(); ++itr){
             copy_vector(itr->second,row);
+            cout <<  itr->first;
+            cout << ": ";
             for(size_t i=0; i<HUNDRED; i++){
-                cout<<row.at(i);
+                cout<< row.at(i);
             }
             cout<<endl;
         }
